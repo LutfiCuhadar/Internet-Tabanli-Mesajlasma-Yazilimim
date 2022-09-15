@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Commissioner:wght@500&family=Montserrat:wght@300&family=Mulish:wght@300;400;500;600&family=Nunito&family=Share+Tech+Mono&family=Work+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+
+        <title>Animo</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="login">
+                <span>Sohbete bağlanmak için isminizi giriniz</span>
+                <input type="text" id="myName" placeholder="İsim Giriniz" autocomplete="off">
+                <button onclick="sohbeteBasla();"><i class="fa fa-comment"></i> Sohbete Başla</button>
+            </div>
+            <h2>Animo Message</h2>
+            <ul id="messages" class="messages">
+                <li class="message">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam numquam placeat voluptatibus labore a! Maxime.</p>
+                <span class="sender">İbrahim</span>
+                <span class="date">23:00</span>
+                </li>
+                <li class="message mine">
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam numquam placeat voluptatibus labore a! Maxime.</p>
+                <span class="date">23:00</span>
+                </li>
+            </ul>
+            <div class="input">
+                <input type="text" id="myInput">
+                <button onclick="mesajGonder();"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+        
+        <script src= "https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src= "https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
